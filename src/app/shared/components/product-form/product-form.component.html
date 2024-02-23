@@ -1,0 +1,11 @@
+<form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label for="pname">Product Name</label>
+        <input type="text" class="form-control" formControlName="pname">
+    </div>
+    <div class="form-group">
+        <label for="pstatus">Product Status</label>
+        <textarea type="text" class="form-control" formControlName="pstatus"></textarea>
+    </div>
+    <button class="btn btn-primary" type="submit">Submit</button>
+</form>

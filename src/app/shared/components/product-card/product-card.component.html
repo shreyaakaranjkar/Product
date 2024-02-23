@@ -1,0 +1,20 @@
+<div class="my-5">
+    <mat-card>
+        <mat-card-header class="bg-dark text-white p-3">
+            <mat-card-title>
+                {{singleProd.pname}}
+            </mat-card-title>
+        </mat-card-header>
+        <mat-divider></mat-divider>
+        <mat-card-content>
+            <p>
+                You have purchsed {{singleProd.pname}} and <strong> Status</strong> {{singleProd.pStatus}}
+            </p>
+        </mat-card-content>
+        <mat-card-actions class="d-flex justify-content-between">
+            <button mat-raised-button color="primary">In-Progress</button>
+            <button mat-raised-button color="primary">Dispatched</button>
+            <button mat-raised-button color="primary">Delivered</button>
+        </mat-card-actions>
+    </mat-card>
+</div>
