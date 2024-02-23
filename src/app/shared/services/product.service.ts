@@ -23,6 +23,9 @@ export class ProductService {
     }
   ]
 
+  fetchProducts(){
+    return this.productsArray;
+  }
   addProduct(product : Iproduct){
     this.productsArray.push(product)
     console.log(product)

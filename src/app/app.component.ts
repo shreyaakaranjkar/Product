@@ -12,7 +12,7 @@ export class AppComponent implements OnInit{
 
   constructor(private prodServ : ProductService){}
   ngOnInit(): void {
-this.productsArrInfo = this.prodServ.productsArray;
+  this.productsArrInfo = this.prodServ.fetchProducts();
 // console.log(this.productsArrInfo)
   }
   title = 'Product';

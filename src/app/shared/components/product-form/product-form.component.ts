@@ -30,5 +30,6 @@ export class ProductFormComponent implements OnInit{
     let prodObj = {...this.productForm.value, id : this.uid.uuid(),
     prodStatus : productStatus.InProgress}
     console.log(prodObj)
+      this.prodServ.addProduct(prodObj)
   }
 }

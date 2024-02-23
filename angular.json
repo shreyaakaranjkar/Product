@@ -35,6 +35,7 @@
               "src/styles.scss"
             ],
             "scripts": [
+              "jquery/dist/jquery.min.js",
               "bootstrap/dist/js/bootstrap.bundle.min.js"
             ]
           },
