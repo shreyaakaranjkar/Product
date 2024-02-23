@@ -28,8 +28,9 @@ export class ProductFormComponent implements OnInit{
   onSubmit(){
     // console.log(this.productForm.value)
     let prodObj = {...this.productForm.value, id : this.uid.uuid(),
-    prodStatus : productStatus.InProgress}
+    pstatus : productStatus.InProgress}
     console.log(prodObj)
-      this.prodServ.addProduct(prodObj)
+      this.prodServ.addProduct(prodObj);
+      this.productForm.reset()
   }
 }

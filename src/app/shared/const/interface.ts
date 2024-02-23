@@ -1,11 +1,11 @@
 export interface Iproduct{
     pname: string;
     pdetails: string;
-    pStatus: productStatus;
+    pstatus: productStatus;
     id: string;
 }
 export enum productStatus {
-    InProgress = "In-Progress",
-    Dispatch = "Dispatched",
-    Deliver = "Delivered"
+    InProgress = 'In-Progress',
+    Dispatch = 'Dispatched',
+    Deliver = 'Delivered'
 }

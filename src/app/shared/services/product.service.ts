@@ -12,19 +12,19 @@ export class ProductService {
     {
       pname : 'Samsung A12',
       pdetails : 'Smart Phone',
-      pStatus : productStatus.InProgress,
+      pstatus : productStatus.InProgress,
       id : '123shk'
     },
     {
       pname : 'Iphone A200',
       pdetails : 'Apple Phone',
-      pStatus : productStatus.Dispatch,
+      pstatus : productStatus.Dispatch,
       id : '345shk'
     }
   ]
 
   fetchProducts(){
-    return this.productsArray;
+    return this.productsArray
   }
   addProduct(product : Iproduct){
     this.productsArray.push(product)
