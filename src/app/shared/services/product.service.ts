@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
 import { Iproduct, productStatus } from '../const/interface';
+import { SnackbarService } from './snackbar.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
 
-  constructor() { }
+  constructor(private snackbar : SnackbarService) { }
 
   productsArray : Array<Iproduct> =[
     {
@@ -29,5 +30,14 @@ export class ProductService {
   addProduct(product : Iproduct){
     this.productsArray.push(product)
     console.log(product)
+  }
+
+  onUpdateStatus(id : string, status:productStatus){
+    console.log(id,status)
+    this.productsArray.find(obj => {
+      if(obj.id === id){
+        obj.pstatus = status
+      }
+    })
   }
 }

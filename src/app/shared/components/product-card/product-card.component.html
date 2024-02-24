@@ -13,9 +13,9 @@
             </p>
         </mat-card-content>
         <mat-card-actions class="d-flex justify-content-between">
-            <button mat-raised-button color="primary">In-Progress</button>
-            <button mat-raised-button color="primary">Dispatched</button>
-            <button mat-raised-button color="primary">Delivered</button>
+            <button mat-raised-button color="primary" (click)="onUpdateStatus('In-Progress')">In-Progress</button>
+            <button mat-raised-button color="primary" (click)="onUpdateStatus('Dispatched')">Dispatched</button>
+            <button mat-raised-button color="primary" (click)="onUpdateStatus('Delivered')">Delivered</button>
         </mat-card-actions>
     </mat-card>
 </div>
